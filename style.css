@@ -4,6 +4,29 @@ body {
     box-sizing: border-box;
 }
 
-.logo h1 {
-    font-family: fantasy copperplate;
+.container {
+    width: 90%;
+    padding: 25%;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+}
+
+nav ul li {
+    list-style: none !important;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
