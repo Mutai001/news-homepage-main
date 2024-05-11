@@ -5,9 +5,39 @@ body {
     font-family: sans-serif;
 }
 
+.main {
+    width: 80%;
+    padding: 8%;
+    /* position: fixed; */
+}
+
 .container {
-    width: 90%;
-    padding: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* .container>.sectio1,
+.section2 {
+    flex: 1;
+} */
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto !important;
+}
+
+.topquestion {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.topquestion>h2,
+p {
+    flex: 1;
 }
 
 nav {
@@ -26,41 +56,80 @@ nav ul li a {
     color: darkslategrey;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
+nav ul li a:hover {
+    color: rgb(207, 30, 30);
+}
+
+.desktopimage {
+    width: 700px;
+    height: 200px;
+}
+
+button {
+    background-color: rgb(207, 30, 30);
+    color: white;
+    margin: 10px 0px;
+    width: fit-content;
+    border: none;
+}
+
+.section1 {
+    padding: 20px;
+}
+
+.section2 {
+    background-color: black;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 40px 40px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.blogsection {
+    font-size: 12px;
+}
+
+.blog img {
+    width: 100px;
+    height: 100px;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
-.desktopimage {
-    width: 30%;
-    height: 100px;
-    margin: 10px;
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin: 50px 0px;
 }
 
-.section1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.section1 h1 {
-    font: 6px;
-}
-
-.section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    min-height: 60%;
-}
-
-.section1,
-.section2 {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .main {
+        width: 100%;
+        padding: 5%;
+    }
+    .desktopimage {
+        width: 100%;
+        height: auto;
+    }
+    .section2 {
+        font-size: 10px;
+    }
+    .blog img {
+        width: 80px;
+        height: 80px;
+    }
 }
